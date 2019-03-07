@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -N job1
+#PBS -l select=1:ncpus=4:mem=32G
+#PBS -M XYX@olemiss.edu
+#PBS -m abe
+
+
+cd $PBS_O_WORKDIR 
+
+module load R
+R ./hw3_gen_cat.r
+
